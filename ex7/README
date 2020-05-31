@@ -1,0 +1,91 @@
+hasenaar
+313584401
+Dean Hasenaar
+
+I discussed the exercise with: No one.
+
+=============================
+=  README for ex7: Recursion
+=============================
+
+
+==================
+=  Description:  =
+==================
+
+1.) this function gets an n int number and prints the int numbers from
+    1 to n count up.
+
+2.) this function gets an n int number and prints the int numbers from
+    n to 1 count down.
+
+3.) this function checks if n has a divisor which is not 1 and is
+    smaller than i.
+
+4.) this function gets an n int number and returns True while n is a
+    prime number, and returns False if not. 
+
+5.) this function checks which int positive numbers are the divisors of
+    an n int number and returns them count up in a list. this function helps
+    us to implement the divisors function.
+
+6.) this function uses the function divisors_helper, gets an int
+    number and returns a list of all its int positive number divisors
+    count up.
+
+7.) this function calculates the factorial number of an n input int
+    number which is not negative.
+
+8.) this function gets an n input int number and a real x number and
+    returns the function of exponential sum by using the given formula.
+    this function helps us to implement the exp_n_x function.
+
+9.) this function uses the exp_n_x_helper function and gets an n input
+    int number and an x real number and returns the function of exponential
+    sum. 
+
+10.) this function solves the game of The Towers of Hanoi.
+
+11.) this function prints all the combinations of 0 and 1 in length n
+    which starts with the prefix. this function helps us to implement the
+    print_binary_sequences function.
+
+12.) this function uses the print_binary_sequences_with_prefix function
+    and prints all the possible combinations of 0 and 1 in length n.
+
+13.) this function prints all the combinations of chars in a list by the
+    length of n which starts with the prefix, while the same char may appear
+    more than one time. this function helps us to implement the
+    print_sequences function.
+
+14.) this function uses the print_sequences_with_prefix function and
+    gets a list of chars, then prints all the possible combinations in
+    length n of chars from the list, while the same char may appear more
+    than one time.
+
+15.) this function prints all the combinations of chars in a list by the
+    length of n which starts with the prefix, while the same char mustn't
+    appear more than one time. this function helps us to implement the
+    print_no_repetition_sequences function.
+
+16.) this function uses the print_no_repetition_sequences_with_prefix
+    function and gets an input list of chars, then prints all the possible
+    combinations in length n of chars from the list, while the same char
+    mustn't appear more than one time.
+
+17.) this function returns a list of strings of all the combinations of
+    chars in a list by the length of n which starts with the prefix, while
+    the same char mustn't appear more than one time. this function helps us
+    to implement the no_repetition_sequences_list function.
+
+18.) this function uses the no_repetition_sequences_list_with_prefix
+    function and gets an input list of chars, then returns a list of strings
+    of all the possible combinations in length n of chars from the list,
+    while the same char mustn't appear more than one time.
+
+======================
+=  Special Comments  =
+======================
+
+
+

@@ -1,0 +1,100 @@
+shira.werman
+203867437
+Shira Werman
+
+hasenaar
+313584401
+Dean Hasenaar
+
+
+=======================================
+=  README for ex9
+=======================================
+
+===========================================
+= Internet pages used for this exercise:  =
+===========================================
+
+
+http://www.python-course.eu/python3_lambda.php
+
+https://docs.python.org/3/library/functions.html#filter
+
+https://docs.python.org/3/tutorial/datastructures.html
+
+==================
+=  Description:  =
+==================
+
+An asteroids game that is made out of a few classes:
+1. a ship class
+2. an asteroids class
+3. a torpedo class
+4. a screen class
+5. a game class
+
+In the game the player controls a space ship surrounded by asteroids.
+If the ship is hit by an asteroid it looses a life. If it is hit
+three times the game ends.
+The ship can shoot torpedos at the asteroids and damage them.
+The goal of the game is to hit all the asteroids on screen
+without getting hit by one.
+
+
+=============================
+=  List of submitted files: =
+=============================
+
+1. README		This file
+2. AUTHORS              Our user-names
+3. ship.py              A python file that defines
+the class 'ship'.
+4. asteroids.py         A python file that defines
+the class 'asteroids'.
+5. torpedo.py           A python file that defines the
+class 'torpedo'
+6. asteroids_main.py    A python file that defines the
+'game' class and operates the game.
+
+
+=====================
+= special comments: =
+=====================
+3 decisions we made:
+
+1. how to set the position of the asteroids
+so that they won't start at the same position as the
+ship.
+alternative:
+set x coor randomly
+if x coor of asteroid is the same as x coor of the ship:
+   set y coor randomly.
+   while y coor of the asteroid == y coor of the ship:
+        set y coor randomly
+else:
+    set y coor randomly
+
+This method might be faster then our implementation, and it
+uses less memore, but for the small chance that
+each time the y coor of the asteroid will be the same
+as the ship we decided on our implementation
+(in which we defined a new range for the rand.choice function
+that did not contain the y coor of the ship).
+
+2. How to move all objects.
+alternative:
+make a special 'move' function for each object seperately.
+That way we need less variables in the function's input and it
+is easier to write down.
+
+We decided on our implementation because it seemed more sufficient,
+because we didn't have to repeat the code several times.
+
+3. creating the 'set score', 'should game continue', 'push the button'.
+alternative:
+write the code down directly in 'game_loop'. It seemed more natural this
+way- to write it where it should be in the proccess.
+
+We decided on our implementation because the game_loop funcion
+was to long, and it became unclear. Defining seperate functions
+for each step made it more coherent.

@@ -1,0 +1,35 @@
+sfhr.8fy8_a
+313012809
+Yulia Feldman
+
+hasenaar
+313584401
+Dean Hasenaar
+
+
+
+=======================================
+=  README for ex5: ex5.py
+=======================================
+
+===========================================
+= Internet pages used for this exercise:  =
+===========================================
+
+http://www.tutorialspoint.com/python/python_dictionary.htm
+
+==================
+=  Description:  =
+==================
+
+This python file contains a number of functions that activates
+a graphic interface through which the user can compare food
+baskets between different stores.
+
+=============================
+=  List of submitted files: =
+=============================
+
+1. README    	    This file
+2. AUTHORS          Our user-names
+3. ex5.py           Containg the program we have made for comparing stores

@@ -1,0 +1,69 @@
+hasenaar
+313584401
+Dean Hasenaar
+ 
+I discussed the exercise with: no one.
+ 
+=============================
+=  README for ex4: Hangman  =
+=============================
+ 
+ 
+ 
+==================
+=  Description:  =
+==================
+
+ 
+In this exercised we created the Hangman game. 
+we used 5 functions in file hangman.py:
+
+
+1.) This function gets as inputs word, current pattern and a letter and
+     returns an updated pattern which includes the same letter. 
+
+2.) This function gets the words list and implements the hangman game
+    itself.
+
+3.) This function does not get and does not return any values, but
+     implements three operations: 1. loads words.txt file into a list by
+     using the load_words function. 2. runs the game by using the
+     run_single_game function. 3. at the end of each game asks the user if
+     he wants to play again, by using the function get_input.
+
+4.) This function gets as an input the words list, the current pattern and
+    the list of wrong guesses and returns a new list which includes only the
+    words from the input list which may fit the previous pattern and
+    guesses.
+
+5.) This function gets an input words list (which is fitting to the current
+    pattern) and also gets the current pattern, and returns the most frequent
+    letter in the list.
+ 
+
+
+
+======================
+=  Special Comments  =
+======================
+ 
+ 
+Answers for questions:
+
+
+
+1. If all the words in the words list were in Hebrew, then I would have to change 
+
+my program in this way: 
+
+
+I would change the function run_single_game() like this: 
+
+In order to check whether or not a character is a valid letter, I would create a 
+
+constant set of strings of all the Hebrew letters and would check whether or not 
+
+the character belongs to the set, instead of using the function islower(). 
+
+
+

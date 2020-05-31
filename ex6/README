@@ -1,0 +1,56 @@
+hasenaar
+313584401
+Dean Hasenaar
+
+I discussed the exercise with: No one.
+
+==============================
+=  README for ex6: Photomasaic
+==============================
+
+==================
+=  Description:  =
+==================
+
+1.) This function calculates the distance between 2 different pixels. 
+
+2.) This function calculates the distance between 2 different images. 
+
+3.) This function returns a piece from an image by getting an input
+    image, tuple of pixel location and tuple size of piece. 
+
+4.) This function changes a certain piece in the image with pixels from
+    another picture, by getting an input image, tuple of pixel location
+    and the second image which exchange the piece of the original image. 
+
+5.) This function returns the averaged color of the pixels in the image.
+    the function gets an input image as list of lists and returns a tuple
+    contains 3 values: average of red, green and blue. 
+
+6.) This function returns a list of the tiles with the averaged colors
+    for each tile. 
+
+7.) This function returns a list of the tiles which their averaged
+    color pixel is more similar to the averaged color pixel of the target
+    image. 
+
+8.) This function gets an input list of averages and calculates the
+    index of the best average which is closest to the input averaged color
+    of an image.
+    this function helps us to implement the function: get_best_tiles. 
+
+9.) This function chooses the best tile from a list of tiles. 
+
+10.) This function creates a photomosaic image by using the algorithm. the
+    function gets an input image, an input list of tiles and an input int
+    number of the tiles in the list which the best tile was chosen from. 
+
+11.) This function runs the program and saves the solution in a file. 
+
+
+======================
+=  Special Comments  =
+======================
+
+
+

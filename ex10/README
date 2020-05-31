@@ -1,0 +1,145 @@
+hasenaar
+313584401
+Dean Hasenaar
+
+I discussed the exercise with: No one.
+
+=============================
+=  README for ex10: 
+=============================
+
+
+==================
+=  Description:  =
+==================
+
+
+From file wikinetwork.py: 
+
+
+1.) This function gets a string of the file's name and returns
+a list of all couples of articles, while each couple is a tuple of
+two names of the articles.
+
+
+From class WikiNetwork:
+
+1.) This method gets a list of all the couples in a file and creates
+a dictionary of the articles' objects while the value of each article
+is an article object which is an exiting neighbor of the original
+article.
+
+2.) This method gets a list of couples of articles and updates the Network
+accordingly.
+
+3.) This method returns a list of all the Articles objects of all the
+articles in the Network.
+
+4.) This method returns a list of names of all the articles in the Network.
+
+5.) This method returns whether or not an article exists in the Network
+according to its name.
+
+6.) This method returns the number of the articles in the Network.
+
+7.) This method returns a string representing the Network: the string
+represents a dictionary which its keys are the articles' names, and
+its values are the articles.
+
+8.) This method gets article's name and returns the object of the article
+which suits its name.
+
+9.) This method gets an int in param iters which represents the number
+of iterations that page_rank will be played, and also gets a real
+number 'd' between 0 to 1 which represents the size of donation to
+the neighbors articles. The method returns a list of the articles'
+names sorted firstly by size from biggest to smallest value and
+secondly by lexicographic order from smallest to biggest.
+
+10.) This method gets article's name and returns a sorted list of all the
+sorted articles firstly by the index jaccard value from biggest to
+smallest value, and secondly by lexicographic order from smallest to
+biggest. If the article's name does not exist in the Network, nor the
+article in the Network has no exiting neighbors - then the method will
+return None.
+
+11.) This method gets article's name and returns an iterator of all the
+articles' names in the path, according to an order. The path goes
+from the article through its exiting neighbors in the Network 
+while the order goes this way: first sort: each pace we choose
+the article with the highest entrance rank of other articles.
+Second sort: we choose the article lexicographically, from
+lowest value to highest value.
+
+
+12.) This method helps us to implement the friends_by_depth method
+by using a recursion. The method gets an article, a depth positive
+integer (or 0) of closeness to other articles in the Network, and all
+the friends set (neighbors) of the article, and updates the friends
+set. The recursion stops when the depth of closeness becomes to 0, 
+and of course the article itself also includes in the set.
+
+
+13.) This method gets an article's name and a depth integer of closeness
+to other articles in the Network (positive integer or 0), and returns
+a list of all the friends' names in distance 'd' (depth param) from it.
+If the article's name does not exist in the Network, the method will
+return None.
+
+
+From file article.py: 
+
+
+From class Article:
+
+1.) This method gets as an input the name of an article and saves a set
+of its neighbors articles.
+
+2.) This method returns the article's name.
+
+3.) Add neighbor to article.
+:param neighbor: Article object
+:return: An updated set of all article's neighbors.
+
+4.) This method returns a list of all article's neighbors.
+
+5.) This method returns a string representing the article's name,
+comma, and a list of all neighbors' names.
+
+6.) This method returns the number of article's neighbors.
+
+7.) This method gets an article object and returns whether or not the
+article object is an exiting neighbors.
+
+
+======================
+=  Special Comments  =
+======================
+
+
+Answers for questions: 
+
+
+Question 1 from Page Rank: 
+
+United_States, France, Europe
+
+
+
+Question 2 from Jaccard Index: 
+
+Louis_XIV_of_France    William_III_of_England
+
+The_Godfather          Citizen_Kane
+
+The_Lord_of_the_Rings  J._R._R._Tolkien
+
+The_Simpsons           Tuvalu
+
+
+
+Question 3 from Friends by Depth: 
+
+1. from United_States        =  6.44% of all articles. 
+2. from United_States_dollar = 20.04% of all articles. 
+3. from Microsoft            = 55.27% of all articles. 

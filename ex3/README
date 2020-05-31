@@ -1,0 +1,113 @@
+hasenaar
+313584401
+Dean Hasenaar
+ 
+I discussed the exercise with: no one.
+ 
+=============================
+=  README for ex3: Loops  =
+=============================
+ 
+ 
+ 
+==================
+=  Description:  =
+==================
+ 
+ 
+In this exercise we had one file: ex3.py
+
+ 
+In this file we had 8 functions: 
+
+
+1.) create_list(): This function returns a list of all the 
+
+input strings which it gets from the user. 
+
+
+2.) concat_list(str_list): This function returns the concatenation of items 
+
+in an input list.
+
+
+3.) average(num_list): This function returns the average of float numbers.
+
+
+4.) cyclic(lst1,lst2): This function checks whether or not one input list is 
+
+a cyclic permutation of another input list.
+
+
+5.) histogram(n,num_list): This function returns the histogram of int numbers 
+
+in an input list, and its maximum number plus one is given too as an input 
+
+(called n).
+
+
+6.) prime_factors(n): This function gets an int positive number and returns 
+
+its products of factorization.
+
+
+7.) cartesian(lst1, lst2): This function returns the cartesian product of two 
+
+input lists. 
+
+
+8.) pairs(n,num_list): This function gets an input list of int numbers and 
+
+another int number called n, and returns all the pairs of two different 
+
+numbers in the list which their sum is n.
+ 
+ 
+======================
+=  Special Comments  =
+======================
+ 
+ 
+Answers for questions:
+
+
+ 
+1. My code will return False, because although the two input values are in the same length, 
+
+(so they fulfill the first condition), the code will enter the loops and will try to compare 
+
+(in each rotation) between an empty list (cyclic_lst) and a string (lst2), and of course this 
+
+boolean expresion will always be False. And finally, after finishing the loops without fulfilling 
+
+the condition even once, the code will return False.
+
+ 
+
+2. My code will return the list [0, 1, 1], because the number zero does not appear at all in 
+
+the input list, one appears once and two appears once too. My code will ignore the numbers four 
+
+and three because they are out of its range (because the second loop goes over range(n), and so 
+
+n itself (or numbers above n) are not included and are not checked at all.
+
+
+ 
+3. My code will return an empty list, because it won't enter the main loop at all: The main loop 
+
+runs through all the int numbers from 2 to the square of n. However, there are no int numbers that 
+
+are bigger than 2 (or equal to 2)  and are also smaller than 0 (or equal to 0), and so the code 
+
+won't enter the main loop, as I said, but will return the initial value of fact_list, which is 
+
+an empty list. 
+ 
+
+
+4. My code will return the list [[0, 2], [0, 2], [0, 2], [0, 2], [1, 1]], because the assumption about 
+
+the function's input list is that there are no repeats of numbers. As a result, bucause of the repeats 
+
+of numbers in the list [0, 0, 1, 1, 2, 2] - there are also repeats in the output list. 
